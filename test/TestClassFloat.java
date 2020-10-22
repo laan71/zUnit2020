@@ -8,7 +8,7 @@
 
 import zunit.TestSuite;
 
-public class TestClassWithStrings extends TestSuite {
+public class TestClassFloat extends TestSuite {
 
     @Override
     public void testMethodList() {
@@ -17,15 +17,14 @@ public class TestClassWithStrings extends TestSuite {
     }
 
     public static void main(String[] args) {
-        TestClassWithStrings testClassWithStrings = new TestClassWithStrings();
-        testClassWithStrings.runTestSuite();
+        TestClassFloat testClassFloat = new TestClassFloat();
+        testClassFloat.runTestSuite();
     }
 
     private void passingTest(){
-        assertEquals(new String("string1"),new String ("string1"));
+        assertEquals(5.75f,5.75f);
     }
     private void failingTest(){
-        assertEquals(new String("string10"),new String ("string2"));
+        assertEquals(5.99,3.1451);
     }
 }
-

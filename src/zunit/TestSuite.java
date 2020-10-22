@@ -23,8 +23,59 @@ public abstract class TestSuite {
     }
     public abstract void testMethodList();
 
+    // Compare int
     public void assertEquals(int expected, int actual){
         if(expected == actual) {
+            passed++;
+        }else{
+            failed++;
+            System.out.println("Test " + (passed + failed) +  " has failed.\n" + "Expected result: " + expected + "\n" +
+            "Actual result: " + actual);
+        }
+    }
+    // Compare Strings
+    public void assertEquals(String expected, String actual){
+        if(expected.equals(actual)) {
+            passed++;
+        }else{
+            failed++;
+            System.out.println("Test " + (passed + failed) +  " has failed.\n" + "Expected result: " + expected + "\n" +
+            "Actual result: " + actual);
+        }
+    }
+    // Compare doubles
+    public void assertEquals(double expected, double actual){
+        if(expected == actual) {
+            passed++;
+        }else{
+            failed++;
+            System.out.println("Test " + (passed + failed) +  " has failed.\n" + "Expected result: " + expected + "\n" +
+            "Actual result: " + actual);
+        }
+    }
+    // Compare booleans
+    public void assertEquals(boolean expected, boolean actual){
+        if(expected == actual) {
+            passed++;
+        }else{
+            failed++;
+            System.out.println("Test " + (passed + failed) +  " has failed.\n" + "Expected result: " + expected + "\n" +
+            "Actual result: " + actual);
+        }
+    }
+    // Compare chars
+    public void assertEquals(char expected, char actual){
+        if(expected==actual) {
+            passed++;
+        }else{
+            failed++;
+            System.out.println("Test " + (passed + failed) +  " has failed.\n" + "Expected result: " + expected + "\n" +
+            "Actual result: " + actual);
+        }
+    }
+    // Compare floats
+    public void assertEquals(float expected, float actual){
+        if(expected==actual) {
             passed++;
         }else{
             failed++;

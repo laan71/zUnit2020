@@ -8,7 +8,7 @@
 
 import zunit.TestSuite;
 
-public class TestClassWithStrings extends TestSuite {
+public class TestClassWithBoolean extends TestSuite {
 
     @Override
     public void testMethodList() {
@@ -17,15 +17,15 @@ public class TestClassWithStrings extends TestSuite {
     }
 
     public static void main(String[] args) {
-        TestClassWithStrings testClassWithStrings = new TestClassWithStrings();
-        testClassWithStrings.runTestSuite();
+        TestClassWithBoolean testClassWithBoolean = new TestClassWithBoolean();
+        testClassWithBoolean.runTestSuite();
     }
 
     private void passingTest(){
-        assertEquals(new String("string1"),new String ("string1"));
+        assertEquals(true,true);
     }
     private void failingTest(){
-        assertEquals(new String("string10"),new String ("string2"));
+        assertEquals(false,true);
     }
 }
 

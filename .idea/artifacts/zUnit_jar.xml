@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="zUnit:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/zUnit_jar</output-path>
+    <root id="archive" name="zUnit.jar">
+      <element id="module-output" name="zUnit" />
+    </root>
+  </artifact>
+</component>
